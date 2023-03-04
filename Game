@@ -1,0 +1,496 @@
+import random
+
+import sys
+
+import time
+
+
+
+
+def animate():
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading |')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading /')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading -')
+
+        time.sleep(0.1)
+
+        sys.stdout.write('\rloading \\')
+
+        time.sleep(0.1)
+
+
+
+
+def intro():
+
+    print(" 𝐑𝐎𝐂𝐊 𝐏𝐀𝐏𝐄𝐑 𝐒𝐂𝐈𝐒𝐒𝐎𝐑𝐒!")
+
+
+
+
+def main():
+
+    global name
+
+    global user
+
+    global cpu
+
+    global play
+
+    global choices
+
+    global cplay
+
+    name = input("Enter your name: ")
+
+    user = 0
+
+    cpu = 0
+
+    print("ROCK\U0001F31A = r")
+
+    print("PAPER\U0001F4C4 = p")
+
+    print("SCISSORS\U0001F5E1 = s")
+
+    print()
+
+    print(name, "=", user)
+
+    print("BOT = ", cpu)
+
+    while True:
+
+        print()
+
+        play = input(">>> ")
+
+        choices = ["r","p","s"]
+
+        cplay = random.choice(choices)
+
+        if play == "r" and cplay == "r":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)
+
+                    (_____)
+
+                    (_____)
+
+                     (____)
+
+            ---.__(___)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'      ____)
+
+                    (_____)
+
+                    (_____)
+
+                    (____)
+
+            ---.__(___)
+
+            """)
+
+        elif play == "r" and cplay == "s":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'      ____)
+
+                    (_____)
+
+                    (_____)
+
+                     (____)
+
+            --- .__(___)
+
+            """)
+
+            print("""
+
+                 ______
+
+            ---'       ___)____
+
+                              _____)
+
+                       __________)
+
+                       (____)
+
+            ---. __ (___)
+
+            """)
+
+            user += 1
+
+        elif play == "r" and cplay == "p":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)
+
+                     (_____)
+
+                     (_____)
+
+                      (____)
+
+            ---. __ (___)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                             ______)
+
+                             _______)
+
+                          _______)
+
+            ---.__________)
+
+            """)
+
+            cpu += 1
+
+        elif play == "p" and cplay == "r":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                             ______)
+
+                             _______)
+
+                          _______)
+
+            ---.__________)
+
+            """)
+
+            print("""
+
+                _______
+
+            ---'      ____)
+
+                     (_____)
+
+                     (_____)
+
+                     (____)
+
+            ---.__(___)
+
+            """)
+
+            user += 1
+
+        elif play == "p" and cplay == "p":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                              ______)
+
+                              _______)
+
+                           _______)
+
+            ---.__________)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                             ______)
+
+                             _______)
+
+                         _______)
+
+            ---.__________)
+
+            """)
+
+        elif play == "p" and cplay == "s":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                              ______)
+
+                               _______)
+
+                           _______)
+
+            ---.__________)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                             ______)
+
+                       __________)
+
+                     (____)
+
+            ---.__(___)
+
+            """)
+
+            cpu += 1
+
+        elif play == "s" and cplay == "s":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'      ____)____
+
+                            ______)
+
+                      __________)
+
+                      (____)
+
+            ---.__ (___)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'      ____)____
+
+                            ______)
+
+                       __________)
+
+                     (____)
+
+            ---.__(___)
+
+            """)
+
+        elif play == "s" and cplay == "p":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                              ______)
+
+                        __________)
+
+                      (____)
+
+            ---.__ (___)
+
+            """)
+
+            print("""
+
+                  _______
+
+            ---'        ____)____
+
+                              ______)
+
+                               _______)
+
+                           _______)
+
+            ---.__________)
+
+            """)
+
+            user += 1
+
+        elif play == "s" and cplay == "r":
+
+            animate()
+
+            print()
+
+            print("""
+
+                 _______
+
+            ---'       ____)____
+
+                             ______)
+
+                       __________)
+
+                     (____)
+
+            ---.__(___)
+
+            """)
+
+            print("""
+
+                 _______
+
+            ---'       ____)
+
+                     (_____)
+
+                      (_____)
+
+                      (____)
+
+            ---.__(___)
+
+            """)
+
+            cpu += 1
+
+        else:
+
+            print("r/s/p")
+
+        print()
+
+        print(name, "=", user)
+
+        print("CPU = ", cpu)
+
+
+
+
+
+
+
+def game():
+
+    intro()
+
+    main()
+
+
+
+
+
+
+
+game()
+
+ 
